@@ -1,0 +1,16 @@
+{
+  "name": "Penlulu文具控的異想世界+鋼筆身世圖譜",
+  "short_name": "Penlulu",
+  "description": "鋼筆、文具、手帳與紙張的大白話知識圖鑑。",
+  "lang": "zh-Hant",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#1f6f6b",
+  "background_color": "#fbf7ef",
+  "icons": [
+    { "src": "./images/icon-192.webp", "sizes": "192x192", "type": "image/webp" },
+    { "src": "./images/icon-512.webp", "sizes": "512x512", "type": "image/webp" },
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
