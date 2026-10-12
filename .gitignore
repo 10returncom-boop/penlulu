@@ -7,7 +7,6 @@ Thumbs.db
 *~
 
 # ---- pen-km 子站不上 Git（依需求排除）----
-pen-km/
 
 # ---- 原始素材：-BKIMG 內為未轉檔的大 PNG（約 158MB），不上 Git ----
 -BKIMG/
