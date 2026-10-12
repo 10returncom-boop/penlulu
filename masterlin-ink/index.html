@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>昀林篆刻金石 · 林政毅書法篆刻個展</title>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='6' y='6' width='52' height='52' rx='6' fill='%239E2B25'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23F5EFE2' font-family='serif' font-weight='bold'%3E%E7%8F%8B%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --paper:#F3ECDD;
+  --paper-2:#EAE0CC;
+  --ink:#26221C;
+  --ink-soft:#4A443A;
+  --seal:#9E2B25;
+  --seal-deep:#7C1F1A;
+  --gold:#B08A3E;
+  --line:#C9B994;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Noto Serif TC','Songti TC','PMingLiU',serif;
+  background:var(--paper) url('assets/bg-xuanpaper.webp') center top / cover no-repeat fixed;
+  color:var(--ink);
+  line-height:1.9;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+
+/* ===== 導覽列 ===== */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(243,236,221,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.15em;font-size:18px}
+.brand .seal-mark{
+  width:34px;height:34px;background:var(--seal);color:var(--paper);
+  display:grid;place-items:center;font-size:18px;border-radius:4px;font-weight:900;
+}
+.nav-links{display:flex;gap:28px;font-size:15px}
+.nav-links a{color:var(--ink-soft);text-decoration:none;letter-spacing:.1em;transition:color .2s}
+.nav-links a:hover{color:var(--seal)}
+@media(max-width:640px){.nav-links{display:none}}
+
+/* ===== Hero ===== */
+.hero{padding:96px 0 72px;position:relative;overflow:hidden}
+.hero .eyebrow{font-size:14px;letter-spacing:.4em;color:var(--seal);margin-bottom:24px;font-family:'Noto Sans TC',sans-serif}
+.hero h1{
+  font-size:clamp(56px,12vw,132px);
+  font-weight:900;line-height:1.05;letter-spacing:.08em;
+  writing-mode:vertical-rl;margin-left:auto;
+}
+.hero-sub{max-width:520px;margin-top:48px}
+.hero-sub h2{font-size:26px;font-weight:600;letter-spacing:.1em;margin-bottom:16px}
+.hero-sub p{color:var(--ink-soft);font-size:16px}
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+.hero-stamp{
+  position:absolute;right:24px;bottom:48px;width:120px;height:120px;
+  background:var(--seal);color:var(--paper);display:grid;place-items:center;
+  font-size:34px;font-weight:900;line-height:1.25;text-align:center;border-radius:6px;
+  transform:rotate(-6deg);box-shadow:0 8px 24px rgba(126,31,26,.3);
+}
+@media(max-width:640px){
+  .hero{padding:56px 0 40px}
+  .hero-grid{grid-template-columns:1fr}
+  .hero h1{writing-mode:horizontal-tb;margin:0;font-size:64px}
+  .hero-stamp{position:static;transform:rotate(-4deg);margin-top:32px;width:96px;height:96px;font-size:26px}
+}
+
+/* ===== 區段通用 ===== */
+section{padding:80px 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:48px}
+.sec-head .num{font-family:'Noto Sans TC',sans-serif;font-size:14px;color:var(--seal);letter-spacing:.2em}
+.sec-head h3{font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:.12em}
+.sec-head .rule{flex:1;height:1px;background:var(--line)}
+
+/* ===== 關於 ===== */
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+@media(max-width:768px){.about-grid{grid-template-columns:1fr;gap:32px}}
+.about-img{
+  background:var(--paper-2);padding:14px;border:1px solid var(--line);
+  box-shadow:0 12px 30px rgba(60,45,20,.12);
+}
+.about-img img{width:100%;display:block}
+.about-text p{margin-bottom:18px;font-size:16px;color:var(--ink-soft)}
+.about-text strong{color:var(--ink)}
+.fact-row{display:flex;gap:24px;margin-top:28px;flex-wrap:wrap}
+.fact{border-left:2px solid var(--seal);padding-left:14px}
+.fact .k{font-family:'Noto Sans TC',sans-serif;font-size:12px;color:var(--ink-soft);letter-spacing:.15em}
+.fact .v{font-size:20px;font-weight:600;margin-top:4px}
+
+/* ===== 師承時間軸 ===== */
+.timeline{display:grid;grid-template-columns:80px 2px 1fr;gap:0 20px;position:relative}
+.tl-item{display:contents}
+.tl-time{font-family:'Noto Sans TC',sans-serif;font-size:15px;color:var(--seal);font-weight:500;text-align:right;padding-top:2px}
+.tl-dot{width:14px;height:14px;background:var(--paper);border:3px solid var(--seal);border-radius:50%;justify-self:center;margin-top:6px;position:relative;z-index:1}
+.tl-line{position:absolute;left:calc(80px + 20px - 1px);top:0;bottom:0;width:2px;background:var(--line)}
+.tl-body{padding-bottom:40px}
+.tl-body h4{font-size:20px;font-weight:600;margin-bottom:6px;letter-spacing:.05em}
+.tl-body p{color:var(--ink-soft);font-size:15px;max-width:560px}
+@media(max-width:640px){
+  .timeline{grid-template-columns:64px 14px 1fr;gap:0 12px}
+  .tl-line{left:calc(64px + 12px + 7px - 1px)}
+  .tl-time{font-size:13px}
+}
+
+/* ===== 作品 ===== */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.gallery{grid-template-columns:repeat(2,1fr);gap:12px}}
+.work{
+  background:#fff;padding:10px;border:1px solid var(--line);
+  transition:transform .25s ease,box-shadow .25s ease;cursor:pointer;
+}
+.work:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(60,45,20,.18)}
+.work img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover;background:var(--paper-2)}
+.work .cap{font-size:12px;color:var(--ink-soft);text-align:center;padding-top:8px;letter-spacing:.05em}
+
+/* ===== 結尾 CTA ===== */
+.cta{background:var(--ink);color:var(--paper);text-align:center;padding:96px 0}
+.cta h3{font-size:clamp(28px,5vw,48px);font-weight:700;letter-spacing:.15em;margin-bottom:20px}
+.cta p{color:#c9c0ad;max-width:520px;margin:0 auto 36px;font-size:16px}
+.cta .seal-big{
+  display:inline-block;background:var(--seal);color:var(--paper);
+  padding:14px 32px;border-radius:6px;font-size:20px;letter-spacing:.2em;font-weight:600;
+}
+footer{padding:28px 0;text-align:center;font-family:'Noto Sans TC',sans-serif;font-size:13px;color:var(--ink-soft);letter-spacing:.1em}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;background:rgba(20,15,10,.92);display:none;place-items:center;z-index:100;padding:24px}
+.lb.open{display:grid}
+.lb img{max-width:92vw;max-height:88vh;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb .close{position:absolute;top:20px;right:28px;color:#fff;font-size:36px;cursor:pointer;line-height:1}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><span class="seal-mark">昀</span>昀林篆刻金石</div>
+    <div class="nav-links">
+      <a href="#about">作者</a>
+      <a href="#lineage">師承</a>
+      <a href="#works">作品集</a>
+      <a href="#contact">聯絡</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">篆刻 · 細朱小篆 · 金石藝術</div>
+    <div class="hero-grid">
+      <div class="hero-sub">
+        <h2>一刀一世界，<br>朱白見性情</h2>
+        <p>林政毅，字昀林，號老人家。以刀為筆，以石為紙，於方寸之間經營漢篆之美。</p>
+      </div>
+      <h1>昀林篆刻</h1>
+    </div>
+    <div class="hero-stamp">昀林<br>之璽</div>
+  </div>
+</header>
+
+<!-- ===== 關於 ===== -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">01</span><h3>關於作者</h3><span class="rule"></span></div>
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="assets/262197_0.jpg" alt="昀林篆刻作品 四德俱全逢九秩">
+      </div>
+      <div class="about-text">
+        <p><strong>林政毅</strong>，字<strong>昀林</strong>，號<strong>老人家</strong>，出生於雲林縣，現居新北永和。</p>
+        <p>民國91年下旬執刀學印，啟蒙於九如軒張輝亮老師，復經老師推薦，轉入晉南軒朱清波老師門下，習藝六載。</p>
+        <p>擅長<strong>細朱小篆</strong>，講究刀筆相生、分朱布白，於線條的剛柔與章法的虛實之間，反覆琢磨一方印章的呼吸。</p>
+        <div class="fact-row">
+          <div class="fact"><div class="k">起蒙年份</div><div class="v">民國91年</div></div>
+          <div class="fact"><div class="k">習藝歷程</div><div class="v">逾 20 年</div></div>
+          <div class="fact"><div class="k">專擅</div><div class="v">細朱小篆</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 師承時間軸 ===== -->
+<section id="lineage">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">02</span><h3>習印因緣</h3><span class="rule"></span></div>
+    <div class="timeline">
+      <div class="tl-line"></div>
+      <div class="tl-item">
+        <div class="tl-time">民國91年<br>下旬</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <h4>執刀初階 · 九如軒</h4>
+          <p>啟蒙於九如軒張輝亮老師，自此與金石結緣，從握刀、識石、臨漢印開始打底。</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">其後六年</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <h4>入室深究 · 晉南軒</h4>
+          <p>經張輝亮老師推薦，轉赴晉南軒朱清波老師門下，正式入室，鑽研章法與刀法前後長達六年。</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">至今</div>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <h4>自成一格 · 細朱小篆</h4>
+          <p>由漢入細朱，講究線條圓勁、佈白勻淨，於閒章、名號章與文人雅趣之間，尋求一方印的完整生命。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 作品集 ===== -->
+<section id="works">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">03</span><h3>篆刻作品集</h3><span class="rule"></span></div>
+    <p style="color:var(--ink-soft);margin-bottom:32px;max-width:640px">下列為邊款原石與朱砂拓影並陳的創作，包含芙蓉石、巴林石等印材，點擊圖片可放大檢視。</p>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="contact">
+  <div class="wrap">
+    <h3>一方刻印，一段因緣</h3>
+    <p>歡迎預約欣賞作品、訂刻閒章、名號章與書畫用印。以刀石會友，靜候雅教。</p>
+    <span class="seal-big">昀林篆刻金石</span>
+  </div>
+</section>
+
+<footer>© 昀林篆刻金石 · 林政毅　版權所有</footer>
+
+<div class="lb" id="lb"><span class="close" id="lbClose">×</span><img id="lbImg" src="" alt="作品放大檢視"></div>
+
+<script>
+// 作品圖清單（48 張）
+var WORKS = [
+  "262188_0.jpg","262189_0.jpg","262190_0.jpg","262191_0.jpg","262192_0.jpg","262193_0.jpg",
+  "262194_0.jpg","262195_0.jpg","262196_0.jpg","262197_0.jpg","262198_0.jpg","262199_0.jpg",
+  "262200_0.jpg","262201_0.jpg","262202_0.jpg","262203_0.jpg","262204_0.jpg","262205_0.jpg",
+  "262206_0.jpg","262207_0.jpg","262208_0.jpg","262209_0.jpg","262210_0.jpg","262211_0.jpg",
+  "262212_0.jpg","262213_0.jpg","262214_0.jpg","262215_0.jpg","262216_0.jpg","262217_0.jpg",
+  "262218_0.jpg","262219_0.jpg","262220_0.jpg","262221_0.jpg","262222_0.jpg","262223_0.jpg",
+  "262224_0.jpg","262225_0.jpg","262226_0.jpg","262227_0.jpg","262228_0.jpg","262229_0.jpg",
+  "262230_0.jpg","262231_0.jpg","262232_0.jpg","262233_0.jpg","262234_0.jpg","262235_0.jpg"
+];
+var g = document.getElementById("gallery");
+WORKS.forEach(function(f,i){
+  var d = document.createElement("div");
+  d.className = "work";
+  d.innerHTML = '<img src="assets/'+f+'" alt="昀林篆刻作品 '+(i+1)+'" loading="lazy">'+
+                '<div class="cap">作品之 '+(i+1)+'</div>';
+  d.addEventListener("click",function(){
+    document.getElementById("lbImg").src = "assets/"+f;
+    document.getElementById("lb").classList.add("open");
+  });
+  g.appendChild(d);
+});
+document.getElementById("lbClose").addEventListener("click",function(){
+  document.getElementById("lb").classList.remove("open");
+});
+document.getElementById("lb").addEventListener("click",function(e){
+  if(e.target===this) this.classList.remove("open");
+});
+</script>
+</body>
+</html>
