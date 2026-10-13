@@ -72,14 +72,13 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 }
 .hero .eyebrow{font-size:14px;letter-spacing:.4em;color:var(--seal);margin-bottom:24px;font-family:'Noto Sans TC',sans-serif}
 .hero h1{
-  font-size:clamp(56px,12vw,132px);
-  font-weight:900;line-height:1.05;letter-spacing:.08em;
-  writing-mode:vertical-rl;margin-left:auto;
+  font-size:clamp(64px,13vw,180px);
+  font-weight:900;line-height:1.02;letter-spacing:.14em;
+  writing-mode:horizontal-tb;
 }
-.hero-sub{max-width:520px;margin-top:48px}
+.hero-sub{max-width:520px;margin-top:40px}
 .hero-sub h2{font-size:26px;font-weight:600;letter-spacing:.1em;margin-bottom:16px}
 .hero-sub p{color:var(--ink-soft);font-size:16px}
-.hero-grid{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
 .hero-stamp{
   position:absolute;right:24px;bottom:48px;width:120px;height:120px;
   background:var(--seal);color:var(--paper);display:grid;place-items:center;
@@ -88,8 +87,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 }
 @media(max-width:640px){
   .hero{padding:56px 0 40px}
-  .hero-grid{grid-template-columns:1fr}
-  .hero h1{writing-mode:horizontal-tb;margin:0;font-size:64px}
+  .hero h1{font-size:52px}
   .hero-stamp{position:static;transform:rotate(-4deg);margin-top:32px;width:96px;height:96px;font-size:26px}
 }
 
@@ -177,12 +175,10 @@ footer{padding:28px 0;text-align:center;font-family:'Noto Sans TC',sans-serif;fo
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">篆刻 · 細朱小篆 · 金石藝術</div>
-    <div class="hero-grid">
-      <div class="hero-sub">
-        <h2>一刀一世界，<br>朱白見性情</h2>
-        <p>林政毅，字昀林，號老人家。以刀為筆，以石為紙，於方寸之間經營漢篆之美。</p>
-      </div>
-      <h1>昀林篆刻</h1>
+    <h1>昀林篆刻</h1>
+    <div class="hero-sub">
+      <h2>一刀一世界，<br>朱白見性情</h2>
+      <p>林政毅，字昀林，號老人家。以刀為筆，以石為紙，於方寸之間經營漢篆之美。</p>
     </div>
     <div class="hero-stamp">昀林<br>之璽</div>
   </div>
