@@ -134,9 +134,9 @@ h1,h2,h3,h4{line-height:1.35;color:var(--ink);font-weight:700}
 .hero-slide.slide-2{animation:heroFade 12s ease-in-out infinite;animation-delay:0s}
 @keyframes heroFade{0%{opacity:0}12%{opacity:1}50%{opacity:1}62%{opacity:0}100%{opacity:0}}
 .hero-search,.hero-search .hs-ico,.hero-search:hover{display:none}
-.hero-banner{position:relative;overflow:hidden;min-height:520px;display:flex;align-items:center}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,40,45,.55) 0%,rgba(20,40,45,.28) 42%,rgba(20,40,45,.05) 70%)}
+.hero-banner{position:relative;overflow:hidden;min-height:520px;display:flex;align-items:center;background:linear-gradient(135deg,#1e3a8a 0%,#2563eb 35%,#60a5fa 70%,#dbeafe 100%)}
+.hero-bg{display:none}
+.hero-overlay{display:none}
 .hero-content{position:relative;z-index:2;padding:40px clamp(20px,6vw,64px) 30px;color:#fff;width:100%;max-width:none;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;height:100%;box-sizing:border-box}
 .hero-content *{text-align:center}
 .hero-kicker{font-size:12.5px;letter-spacing:3px;font-weight:700;color:#dbeafe;margin-bottom:18px}
