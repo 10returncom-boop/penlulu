@@ -115,7 +115,7 @@ h1,h2,h3,h4{line-height:1.35;color:var(--ink);font-weight:700}
 .hero-visual img{max-width:100%;max-height:470px;width:auto;height:auto;border-radius:22px;box-shadow:0 20px 55px rgba(0,0,0,.38);object-fit:contain}
 /* hero 只放站名標題，其餘文字移到下一區 */
 .hero-text .hero-brand-only{font-size:54px;line-height:1.1;margin:0}
-.hero-intro{background:url('../../images/penlulu_stationery_card_fp-brands.webp') center/cover no-repeat;padding:52px 0 60px;border-bottom:1px solid var(--border)}
+.hero-intro{background:var(--card);padding:52px 0 60px;border-bottom:1px solid var(--border)}
 .hero-gap{background:var(--card);height:28px}
 .hero-intro-head{max-width:700px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center}
 .hero-intro-head *{text-align:center}
