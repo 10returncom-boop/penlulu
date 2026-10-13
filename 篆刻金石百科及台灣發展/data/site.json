@@ -1,0 +1,1140 @@
+{
+ "site": {
+  "name": "篆刻金石百科｜台灣發展",
+  "name_en": "Seal Carving & Epigraphy Encyclopedia · Taiwan",
+  "desc": "從金石學、篆刻史、印石材料到台灣印社與名家，用大白話帶你一次看懂篆刻金石，並以台灣在地觀點看這門千年手藝怎麼活到今天。",
+  "rootUrl": "https://seal-epigraphy.example.com/",
+  "version": "v1.0.0",
+  "updated": "2026-10-10"
+ },
+ "chapters": [
+  {
+   "id": "jinxue",
+   "zh": "金石學入門",
+   "en": "Epigraphy Basics",
+   "desc": "金石學是什麼？從青銅器、石刻到拓片著錄，先搞懂這門學問再談篆刻。",
+   "subs": [
+    {
+     "id": "intro",
+     "zh": "認識金石學",
+     "en": "What Is Epigraphy",
+     "desc": "金石二字的由來：青銅器與石刻，怎麼從收藏變成一門學問。"
+    },
+    {
+     "id": "history",
+     "zh": "金石學的演變",
+     "en": "History of Epigraphy",
+     "desc": "宋代呂大臨、清代乾嘉學派，金石學怎麼一步步成熟。"
+    },
+    {
+     "id": "relation",
+     "zh": "金石與篆刻的關係",
+     "en": "Epigraphy & Seal Carving",
+     "desc": "印章本身就是金石的縮影：文字、材質、刀法全都相通。"
+    },
+    {
+     "id": "rubbing",
+     "zh": "拓片與著錄",
+     "en": "Rubbings & Catalogues",
+     "desc": "打拓、題跋、印譜：古人怎麼把金石資料保留下來。"
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "zh": "篆刻演變史",
+   "en": "History of Seal Carving",
+   "desc": "從先秦古璽到明清流派，一條線看懂印章兩千年怎麼演變。",
+   "subs": [
+    {
+     "id": "pre-qin",
+     "zh": "先秦古璽",
+     "en": "Pre-Qin Seals",
+     "desc": "戰國璽印到底在印什麼？東周諸侯的官璽與私璽。"
+    },
+    {
+     "id": "han-qin",
+     "zh": "秦漢印",
+     "en": "Qin & Han Seals",
+     "desc": "漢印為什麼被奉為典範？繆篆與官印制度。"
+    },
+    {
+     "id": "tang-ming",
+     "zh": "唐宋金元",
+     "en": "Tang–Song–Jin–Yuan",
+     "desc": "尺寸變大、九疊文流行，元代花押與文人印萌芽。"
+    },
+    {
+     "id": "ming-qing",
+     "zh": "明清流派",
+     "en": "Ming–Qing Schools",
+     "desc": "文彭、何震到西泠八家，篆刻從實用變成文人藝術。"
+    },
+    {
+     "id": "modern",
+     "zh": "近現代與當代",
+     "en": "Modern & Contemporary",
+     "desc": "吳昌碩、齊白石之後，篆刻怎麼走進當代與台灣。"
+    }
+   ]
+  },
+  {
+   "id": "materials",
+   "zh": "印石材料百科",
+   "en": "Seal Stone Materials",
+   "desc": "四大名石、凍石、奇石——每顆石頭的脾氣與價位，台灣買得到哪些。",
+   "subs": [
+    {
+     "id": "four-famous",
+     "zh": "四大名石總覽",
+     "en": "Four Famous Stones",
+     "desc": "壽山、青田、昌化、巴林，先搞懂四大門派再談選石。"
+    },
+    {
+     "id": "shoushan",
+     "zh": "壽山石系",
+     "en": "Shoushan Stones",
+     "desc": "田黃、荔枝凍、芙蓉、都成坑，福州壽山的百寶箱。"
+    },
+    {
+     "id": "qingtian",
+     "zh": "青田石系",
+     "en": "Qingtian Stones",
+     "desc": "封門青、藍星、龍蛋、燈光凍，溫潤易刻的練刀首選。"
+    },
+    {
+     "id": "changhua",
+     "zh": "昌化石系",
+     "en": "Changhua Stones",
+     "desc": "雞血石為什麼紅得像血？昌化硃砂與凍地。"
+    },
+    {
+     "id": "balin",
+     "zh": "巴林石系",
+     "en": "Balin Stones",
+     "desc": "內蒙古巴林凍與雞血，後起之秀的色彩戰士。"
+    },
+    {
+     "id": "other",
+     "zh": "其他石種",
+     "en": "Other Stones",
+     "desc": "廣元石、遼寧凍、雲南石、浙江紅，台灣文房常見的平價選擇。"
+    },
+    {
+     "id": "market",
+     "zh": "選石與行情",
+     "en": "Buying & Market",
+     "desc": "在台灣怎麼挑第一顆印石、怎麼看行情與真假。"
+    }
+   ]
+  },
+  {
+   "id": "techniques",
+   "zh": "篆刻技法",
+   "en": "Carving Techniques",
+   "desc": "怎麼下刀、寫什麼字、怎麼佈局、最後怎麼鈐出來，一招一招拆給你看。",
+   "subs": [
+    {
+     "id": "knife",
+     "zh": "刀法基本功",
+     "en": "Knife Techniques",
+     "desc": "沖刀、切刀、單刀、雙刀、殘邊——手怎麼動。"
+    },
+    {
+     "id": "script",
+     "zh": "篆法字體",
+     "en": "Seal Script Systems",
+     "desc": "小篆、大篆、繆篆、摹印篆、璽印文字選哪一種。"
+    },
+    {
+     "id": "layout",
+     "zh": "章法布局",
+     "en": "Composition",
+     "desc": "疏密、屈伸、挪讓，一方印的分間佈局。"
+    },
+    {
+     "id": "stamping",
+     "zh": "鈐印與印泥",
+     "en": "Stamping & Ink Paste",
+     "desc": "印泥怎麼選、怎麼鈐才清晰不糊、怎麼蓋在作品上。"
+    }
+   ]
+  },
+  {
+   "id": "seal-types",
+   "zh": "印章形制與用途",
+   "en": "Seal Types & Uses",
+   "desc": "名號印、閒章、肖形印、鑑藏印——什麼場合用哪一方。",
+   "subs": [
+    {
+     "id": "name",
+     "zh": "名號印",
+     "en": "Name & Style Seals",
+     "desc": "姓名印、字印、號印，落款的第一方印。"
+    },
+    {
+     "id": "leisure",
+     "zh": "閒章閒文",
+     "en": "Leisure Seals",
+     "desc": "引首章、壓角章、格言閒章，畫面的呼吸與個性。"
+    },
+    {
+     "id": "picture",
+     "zh": "肖形印圖案印",
+     "en": "Pictorial Seals",
+     "desc": "人物、動物、佛像、生肖圖案印。"
+    },
+    {
+     "id": "collector",
+     "zh": "鑑藏藏書印",
+     "en": "Collector & Library Seals",
+     "desc": "鑑賞印、收藏印、藏書印，一頁畫上的印譜層層疊。"
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "zh": "工具印泥與印譜",
+   "en": "Tools, Ink Paste & Albums",
+   "desc": "刻刀、印床、印泥、印譜——把全套家當備齊，台灣哪裡買得到。",
+   "subs": [
+    {
+     "id": "carving",
+     "zh": "刻刀與輔具",
+     "en": "Carving Tools & Aids",
+     "desc": "篆刻刀怎麼選、印床、砂紙、放大鏡與刷帚。"
+    },
+    {
+     "id": "inkpaste",
+     "zh": "印泥品牌與保養",
+     "en": "Ink Paste Brands & Care",
+     "desc": "漳州、杭州、上海各大印泥與日常養護。"
+    },
+    {
+     "id": "yinpu",
+     "zh": "印譜與臨摹",
+     "en": "Seal Albums & Copying",
+     "desc": "歷代印譜怎麼看、怎麼藏，臨摹取法的寶庫。"
+    }
+   ]
+  },
+  {
+   "id": "taiwan-history",
+   "zh": "台灣篆刻發展史",
+   "en": "Seal Carving in Taiwan",
+   "desc": "從清代書院、日治書道到戰後渡海名家，台灣怎麼長出自己的篆刻風景。",
+   "subs": [
+    {
+     "id": "qing",
+     "zh": "清代與日治前期",
+     "en": "Qing & Early Japanese Era",
+     "desc": "書院教育、士紳用印與總督府體制下的書道初萌。"
+    },
+    {
+     "id": "japanese",
+     "zh": "日治時期的書篆教育",
+     "en": "Japanese-Era Education",
+     "desc": "展覽會、書法社團與曹秋圃澹廬書會，篆刻的土壤怎麼成形。"
+    },
+    {
+     "id": "postwar",
+     "zh": "戰後渡海名家與復興",
+     "en": "Postwar Masters & Revival",
+     "desc": "王壯為、王北岳等名家來台，篆刻從此扎根學院與民間。"
+    },
+    {
+     "id": "liberalization",
+     "zh": "解嚴後的多元發展",
+     "en": "Post-Liberalization Diversity",
+     "desc": "本土意識抬頭，篆刻從文人雅玩走向當代創作。"
+    },
+    {
+     "id": "contemporary",
+     "zh": "當代台灣篆刻現場",
+     "en": "Contemporary Scene",
+     "desc": "新一代篆刻家、展覽、跨界合作，台灣篆刻現在長什麼樣。"
+    }
+   ]
+  },
+  {
+   "id": "taiwan-societies",
+   "zh": "台灣印社與社團",
+   "en": "Seal Societies in Taiwan",
+   "desc": "台灣印社、篆刻學會、縣市印社——把全台灣的篆刻組織一次摸清。",
+   "subs": [
+    {
+     "id": "taiwan-seal-society",
+     "zh": "台灣印社",
+     "en": "Taiwan Seal Society",
+     "desc": "台灣最具代表性的篆刻團體，怎麼運作、怎麼入社。"
+    },
+    {
+     "id": "associations",
+     "zh": "學會與協會",
+     "en": "Associations & Institutes",
+     "desc": "中華民國篆刻學會、台灣篆刻家協會等組織的角色。"
+    },
+    {
+     "id": "local-groups",
+     "zh": "縣市印社與書會",
+     "en": "Local Societies",
+     "desc": "各縣市印社、書會與澹廬書會，地方上的篆刻據點。"
+    },
+    {
+     "id": "education",
+     "zh": "教育推廣與比賽",
+     "en": "Education & Competitions",
+     "desc": "學校社團、社區大學、美展篆刻類，新手從哪裡開始。"
+    },
+    {
+     "id": "exchange",
+     "zh": "兩岸與國際交流",
+     "en": "Cross-Strait & International",
+     "desc": "與西泠印社、日本篆刻界的交流，台灣篆刻怎麼走出去。"
+    }
+   ]
+  },
+  {
+   "id": "taiwan-masters",
+   "zh": "台灣篆刻名家",
+   "en": "Taiwanese Masters",
+   "desc": "從渡海名家到當代中堅，認識把篆刻帶進台灣的每一雙手。",
+   "subs": [
+    {
+     "id": "cross-strait",
+     "zh": "渡海名家",
+     "en": "Cross-Strait Masters",
+     "desc": "王壯為、王北岳、曾紹杰、吳平——戰後台灣篆刻的奠基者。"
+    },
+    {
+     "id": "mid-generation",
+     "zh": "中生代大家",
+     "en": "Mid-Generation Masters",
+     "desc": "薛平南、黃嘗銘等承先啟後的一代。"
+    },
+    {
+     "id": "contemporary",
+     "zh": "當代中堅",
+     "en": "Contemporary Practitioners",
+     "desc": "陳宏勉、林淑女、柯詩安等活躍於當代的篆刻家。"
+    },
+    {
+     "id": "women",
+     "zh": "女性篆刻家",
+     "en": "Women Seal Carvers",
+     "desc": "林淑女等女性篆刻家如何在這個領域走出自己的路。"
+    }
+   ]
+  },
+  {
+   "id": "taiwan-culture",
+   "zh": "台灣金石文化現場",
+   "en": "Epigraphy Culture in Taiwan",
+   "desc": "故宮典藏、印石市場、文房印社——台灣現在哪裡看得到金石篆刻。",
+   "subs": [
+    {
+     "id": "palace",
+     "zh": "故宮與文物典藏",
+     "en": "National Palace Museum",
+     "desc": "毛公鼎、散氏盤與璽印典藏，鎮館之寶的台灣故事。"
+    },
+    {
+     "id": "market",
+     "zh": "印石市場與拍賣",
+     "en": "Stone Market & Auctions",
+     "desc": "台灣印石市場、拍賣會與行情怎麼走。"
+    },
+    {
+     "id": "shops",
+     "zh": "印石店與文房",
+     "en": "Stone Shops & Stationery",
+     "desc": "台北、台中、高雄哪裡買印石與印泥，店家怎麼挑。"
+    },
+    {
+     "id": "collection",
+     "zh": "收藏與鑑賞",
+     "en": "Collecting & Appreciation",
+     "desc": "收藏印章的門道：名家款、材質、鈕雕與印譜。"
+    },
+    {
+     "id": "creative",
+     "zh": "文創與跨界應用",
+     "en": "Creative & Cross-Disciplinary",
+     "desc": "從婚禮用印到 NFT 印章，篆刻怎麼走進現代生活。"
+    }
+   ]
+  }
+ ],
+ "articles": [
+  {
+   "slug": "what-is-jinxue",
+   "chapter": "jinxue",
+   "sub": "intro",
+   "title": "什麼是金石學",
+   "en": "What Is Epigraphy",
+   "summary": "金石學就是古人研究青銅器和石刻的學問，看懂它，等於拿到打開篆刻世界的鑰匙。",
+   "tags": "金石學,入門,文字學,故宮,考古,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "jin-shi-origin",
+   "chapter": "jinxue",
+   "sub": "intro",
+   "title": "「金」與「石」到底是什麼",
+   "en": "What Are Jin and Shi",
+   "summary": "「金」指青銅器、「石」指碑刻，金石學就是研究這些硬邦邦文物上面文字的學問。",
+   "tags": "金石學,金文,石刻,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "song-epigraphy",
+   "chapter": "jinxue",
+   "sub": "history",
+   "title": "宋代金石學的開端",
+   "en": "Song-Dynasty Epigraphy",
+   "summary": "北宋文人把青銅器與石刻當作學問來做，金石學從此成為中國獨有的一門傳統學科。",
+   "tags": "金石學,宋代,歐陽修,呂大臨,趙明誠,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "qing-epigraphy",
+   "chapter": "jinxue",
+   "sub": "history",
+   "title": "清代乾嘉金石學",
+   "en": "Qing-Dynasty Epigraphy",
+   "summary": "清代考據學把金石推上高峰，印人學篆字、刻印章，靠的就是這一代人整理出來的字料。",
+   "tags": "金石學,清代,阮元,考據,篆刻,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "seal-as-jinshi",
+   "chapter": "jinxue",
+   "sub": "relation",
+   "title": "印章是金石的活化石",
+   "en": "Seals as Living Epigraphy",
+   "summary": "別把印章想得太高深，它就是一塊可以握在手裡的微型金石，最適合當作金石學的入門教材。",
+   "tags": "金石學,印章,古璽,故宮,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "jinshi-for-carver",
+   "chapter": "jinxue",
+   "sub": "relation",
+   "title": "學篆刻為什麼要先懂金石",
+   "en": "Why Carvers Need Epigraphy",
+   "summary": "篆刻刻的是古字，古字的正確答案在金石裡，所以學篆刻繞不過金石這一課。",
+   "tags": "金石學,篆法,字學,鄧石如,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "what-is-rubbing",
+   "chapter": "jinxue",
+   "sub": "rubbing",
+   "title": "拓片是怎麼做出來的",
+   "en": "How Rubbings Are Made",
+   "summary": "拓片就是把碑刻或銅器上的字用墨「印」到紙上，古人的複印技術，現在依然是收藏與學習的寶貝。",
+   "tags": "拓片,金石學,毛公鼎,收藏,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "yinpu-record",
+   "chapter": "jinxue",
+   "sub": "rubbing",
+   "title": "印譜：印章界的拓片集",
+   "en": "Seal Albums as Records",
+   "summary": "印譜等於印章界的攝影集，把一方方印章的原貌拓下來，學篆刻、做鑑定都靠它。",
+   "tags": "印譜,印拓,收藏,臨摹,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "warring-states-xi",
+   "chapter": "history",
+   "sub": "pre-qin",
+   "title": "戰國古璽",
+   "en": "Warring-States Xi Seals",
+   "summary": "戰國古璽是印章的老祖宗，字體自由、形狀活潑，先認識它才看得懂後來的漢印。",
+   "tags": "古璽,先秦,官印,收藏,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "jinwen-jiyu",
+   "chapter": "history",
+   "sub": "pre-qin",
+   "title": "吉語印與肖形印",
+   "en": "Auspicious & Pictorial Seals",
+   "summary": "先秦人就開始用印章討吉利、蓋圖案，閒章和肖形印的老祖宗其實兩千多年前就有了。",
+   "tags": "吉語印,肖形印,閒章,先秦,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "qin-moyin",
+   "chapter": "history",
+   "sub": "han-qin",
+   "title": "秦摹印篆",
+   "en": "Qin Moyin Script",
+   "summary": "秦代專門為印章創造一種字體叫摹印篆，印章從此有了自己的專用書法。",
+   "tags": "秦印,摹印篆,字體,書同文,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "han-miaozhuan",
+   "chapter": "history",
+   "sub": "han-qin",
+   "title": "漢印與繆篆",
+   "en": "Han Seals & Miao Zhuan",
+   "summary": "學篆刻的人都說「從漢印入手」，因為漢印滿、穩、正，是兩千年來的基本教科書。",
+   "tags": "漢印,繆篆,白文,典範,臨摹,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "jiudiewen",
+   "chapter": "history",
+   "sub": "tang-ming",
+   "title": "唐宋九疊文官印",
+   "en": "Nine-Fold Script Official Seals",
+   "summary": "唐宋官印把字折來折去塞滿版面，制度上威嚴，藝術上反而被後世文人嫌呆板。",
+   "tags": "九疊文,官印,唐宋,字體,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "yuan-huaya-wangmian",
+   "chapter": "history",
+   "sub": "tang-ming",
+   "title": "元代花押與王冕刻石",
+   "en": "Yuan Huaya & Wang Mian",
+   "summary": "元代兩件大事：花押流行、王冕開始用石頭刻印，篆刻從此從工匠手裡交回文人手上。",
+   "tags": "花押,王冕,文人印,石印,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "wenpeng-dengguangdong",
+   "chapter": "history",
+   "sub": "ming-qing",
+   "title": "文彭與燈光凍",
+   "en": "Wen Peng & Dengguangdong",
+   "summary": "文彭一塊燈光凍石改變了篆刻史，從此文人自己磨石、自己下刀，印學正式成型。",
+   "tags": "文彭,青田石,燈光凍,文人印,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "hezhen-wanpai",
+   "chapter": "history",
+   "sub": "ming-qing",
+   "title": "何震與皖派開山",
+   "en": "He Zhen & the Wan School",
+   "summary": "何震是皖派開山祖，刀鋒銳利、個性強，和溫雅的文彭正好是兩條路。",
+   "tags": "何震,皖派,徽派,刀法,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "zhepai-xiling",
+   "chapter": "history",
+   "sub": "ming-qing",
+   "title": "浙派與西泠八家",
+   "en": "Zhe School & the Eight Masters",
+   "summary": "浙派用切刀刻出澀辣的線條，稱霸清代中期，西泠印社就是從這條脈絡長出來的。",
+   "tags": "浙派,西泠八家,丁敬,切刀,西泠印社,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "wuchangshuo-qibaishi",
+   "chapter": "history",
+   "sub": "modern",
+   "title": "吳昌碩與齊白石",
+   "en": "Wu Changshuo & Qi Baishi",
+   "summary": "吳昌碩圓、齊白石猛，兩人把篆刻從古典推向現代，是所有學印人都繞不開的兩座山。",
+   "tags": "吳昌碩,齊白石,石鼓文,單刀,進階",
+   "difficulty": "進階"
+  },
+  {
+   "slug": "seal-to-taiwan",
+   "chapter": "history",
+   "sub": "modern",
+   "title": "篆刻怎麼傳進台灣",
+   "en": "How Seal Carving Came to Taiwan",
+   "summary": "篆刻傳進台灣有三個關鍵時刻：清代書院、日治書道、戰後渡海名家，缺一不可。",
+   "tags": "台灣,篆刻史,王壯為,王北岳,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "four-famous-overview",
+   "chapter": "materials",
+   "sub": "four-famous",
+   "title": "四大名石總覽",
+   "en": "Four Famous Stones",
+   "summary": "四大名石就是印石界的四大門派，認識它們，逛印石店才有方向。",
+   "tags": "四大名石,壽山,青田,昌化,巴林,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "tianhuang",
+   "chapter": "materials",
+   "sub": "shoushan",
+   "title": "田黃石：石帝",
+   "en": "Tianhuang: Emperor of Stones",
+   "summary": "田黃是印石之王，產量稀少、質地溫潤，收藏圈有一句話：沒摸過田黃，別說懂印石。",
+   "tags": "田黃,壽山,石帝,收藏,進階",
+   "difficulty": "進階"
+  },
+  {
+   "slug": "lizhidong-furong",
+   "chapter": "materials",
+   "sub": "shoushan",
+   "title": "荔枝凍與芙蓉石",
+   "en": "Lizhi Jelly & Furong Stones",
+   "summary": "田黃太貴，荔枝凍與芙蓉石才是台灣藏家手上最常見的壽山好貨，質地與價位都討喜。",
+   "tags": "壽山,荔枝凍,芙蓉石,印石,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "fengmenqing",
+   "chapter": "materials",
+   "sub": "qingtian",
+   "title": "封門青：青田之寶",
+   "en": "Fengmen Qing",
+   "summary": "封門青色美、刀感好、價位親民，是新手與老手都喜歡的青田名品。",
+   "tags": "青田,封門青,印石,練刀,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "dengguangdong",
+   "chapter": "materials",
+   "sub": "qingtian",
+   "title": "燈光凍：文彭的傳奇",
+   "en": "Dengguangdong",
+   "summary": "燈光凍是文彭開啟文人篆刻的那塊石頭，通靈溫潤，是青田石裡的歷史擔當。",
+   "tags": "青田,燈光凍,文彭,印石,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "changhua-jixue",
+   "chapter": "materials",
+   "sub": "changhua",
+   "title": "昌化雞血石：石后",
+   "en": "Changhua Jixue",
+   "summary": "雞血石紅得像血，昌化老坑貨色最正，收藏價值與視覺衝擊力都是頂級。",
+   "tags": "昌化,雞血石,石后,收藏,進階",
+   "difficulty": "進階"
+  },
+  {
+   "slug": "balin-jixue",
+   "chapter": "materials",
+   "sub": "balin",
+   "title": "巴林雞血與巴林凍",
+   "en": "Balin Jixue & Balin Stones",
+   "summary": "巴林石靠一本《巴林石譜》打開台灣市場，雞血豔、凍石彩，是收藏圈的後起之秀。",
+   "tags": "巴林,雞血石,巴林石譜,印石,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "pingjia-stones",
+   "chapter": "materials",
+   "sub": "other",
+   "title": "平價石種怎麼挑",
+   "en": "Affordable Stones",
+   "summary": "預算有限就從平價石種下手，練刀、練篆、練鈐印，便宜大碗不心疼。",
+   "tags": "平價石,廣元,遼寧凍,浙江紅,練習,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "first-stone",
+   "chapter": "materials",
+   "sub": "market",
+   "title": "台灣新手第一顆印石怎麼挑",
+   "en": "Choosing Your First Stone in Taiwan",
+   "summary": "第一顆印石不必貴，刀感順手、價位親民、花色順眼，三條件到齊就能開刻。",
+   "tags": "選石,新手,印石,台灣,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "price-logic",
+   "chapter": "materials",
+   "sub": "market",
+   "title": "印石行情怎麼看",
+   "en": "How to Read Stone Prices",
+   "summary": "看懂印石行情先記四字訣：品種、產地、質地、工藝，四關都過才談得上好價錢。",
+   "tags": "行情,收藏,印石,鑑定,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "chong-qie",
+   "chapter": "techniques",
+   "sub": "knife",
+   "title": "沖刀與切刀",
+   "en": "Chong (Push) vs Qie (Cut) Knife",
+   "summary": "沖刀像寫字一筆到底，切刀像雕刻一段段來，兩種刀法練熟，篆刻就算入了門。",
+   "tags": "刀法,沖刀,切刀,皖派,浙派,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "single-double",
+   "chapter": "techniques",
+   "sub": "knife",
+   "title": "單刀與雙刀",
+   "en": "Single vs Double Knife",
+   "summary": "單刀求勢、雙刀求工，先練雙刀把線刻直，再練單刀把勢刻出來。",
+   "tags": "刀法,單刀,雙刀,齊白石,漢印,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "xiaozhuan-dazhuan",
+   "chapter": "techniques",
+   "sub": "script",
+   "title": "小篆與大篆",
+   "en": "Small & Large Seal Script",
+   "summary": "小篆是篆刻的普通話、大篆是方言，先學普通話，再慢慢學方言。",
+   "tags": "篆法,小篆,大篆,說文,字體,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "miaozhuan-moyin",
+   "chapter": "techniques",
+   "sub": "script",
+   "title": "繆篆與摹印篆",
+   "en": "Miao Zhuan & Moyin Script",
+   "summary": "繆篆和摹印篆是專門為印章設計的字體，懂了它們，才懂漢印為什麼長那樣。",
+   "tags": "繆篆,摹印篆,漢印,篆法,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "zhangfa",
+   "chapter": "techniques",
+   "sub": "layout",
+   "title": "章法布局基本功",
+   "en": "Composition Basics",
+   "summary": "章法就是印面的排版，字怎麼站、留白留哪裡，決定一方印是呆板還是耐看。",
+   "tags": "章法,布局,疏密,滿白,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "yinni-xuanze",
+   "chapter": "techniques",
+   "sub": "stamping",
+   "title": "印泥怎麼選",
+   "en": "Choosing Ink Paste",
+   "summary": "好印泥讓印面清清楚楚，爛印泥再好的印章也白搭，這是新手最容易忽略的開銷。",
+   "tags": "印泥,硃砂,鈐印,文房,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "qiaoyin",
+   "chapter": "techniques",
+   "sub": "stamping",
+   "title": "鈐印技巧",
+   "en": "Stamping Techniques",
+   "summary": "鈐印靠的是輕、直、穩三字訣，力氣越大越容易糊，新手第一個要改的就是用力過猛。",
+   "tags": "鈐印,印泥,落款,技巧,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "xingming-yin",
+   "chapter": "seal-types",
+   "sub": "name",
+   "title": "姓名印",
+   "en": "Name Seals",
+   "summary": "姓名印是一個人最基礎的印章，從刻自己的名字開始，最能體會篆刻的樂趣。",
+   "tags": "姓名印,落款,用印,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "zihao-zhai",
+   "chapter": "seal-types",
+   "sub": "name",
+   "title": "字號印與齋館印",
+   "en": "Style Names & Studio Seals",
+   "summary": "字號印與齋館印是文人的第二張名片，刻得好，比姓名印更能看出一個人的品味。",
+   "tags": "字號印,齋館印,文人印,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "yinshou-yajiao",
+   "chapter": "seal-types",
+   "sub": "leisure",
+   "title": "引首章與壓角章",
+   "en": "Yinshou & Yajiao Seals",
+   "summary": "引首章開場、壓角章收尾，兩顆閒章讓書畫作品的章法完整又好看。",
+   "tags": "閒章,引首章,壓角章,書畫,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "xianzhang-geyan",
+   "chapter": "seal-types",
+   "sub": "leisure",
+   "title": "格言閒章",
+   "en": "Motto Leisure Seals",
+   "summary": "格言閒章是篆刻的表情，一句話、一方印，把心境刻在石頭上。",
+   "tags": "閒章,格言,吉語,詩文,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "xiaoxing-yin",
+   "chapter": "seal-types",
+   "sub": "picture",
+   "title": "肖形印",
+   "en": "Pictorial Seals",
+   "summary": "肖形印是印章界的繪畫，不認字也能欣賞，最適合當作接觸篆刻的第一方。",
+   "tags": "肖形印,圖案印,生肖,漢印,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "cangshu-jianshang",
+   "chapter": "seal-types",
+   "sub": "collector",
+   "title": "藏書印與鑑賞印",
+   "en": "Library & Appreciation Seals",
+   "summary": "藏書印是藏家的戳記，也是書畫身世的證明，看懂了它，等於看懂了收藏史。",
+   "tags": "藏書印,鑑賞印,收藏,鑑定,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "kedao",
+   "chapter": "tools",
+   "sub": "carving",
+   "title": "篆刻刀怎麼選",
+   "en": "Choosing Carving Knives",
+   "summary": "選刀不必迷信名牌，鋼好、口寬合宜、握著順手，就是你的本命刀。",
+   "tags": "刻刀,工具,選購,新手,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "fuju",
+   "chapter": "tools",
+   "sub": "carving",
+   "title": "印床與輔具",
+   "en": "Seal Vices & Aids",
+   "summary": "印床、砂紙、刷帚這些小工具不貴，卻能讓新手少走很多彎路。",
+   "tags": "印床,砂紙,輔具,工具,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "yinni-brands",
+   "chapter": "tools",
+   "sub": "inkpaste",
+   "title": "台灣買得到的印泥品牌",
+   "en": "Ink Paste Brands in Taiwan",
+   "summary": "印泥品牌先認三大系，再依預算與用途挑，台灣都買得到，不用出國囤貨。",
+   "tags": "印泥,漳州八寶,西泠,品牌,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "yinni-care",
+   "chapter": "tools",
+   "sub": "inkpaste",
+   "title": "印泥怎麼保養",
+   "en": "Caring for Ink Paste",
+   "summary": "印泥養得好用幾十年，養不好一年就乾，祕訣只有四個字：密封、避光。",
+   "tags": "印泥,保養,文房,收藏,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "yinpu-read",
+   "chapter": "tools",
+   "sub": "yinpu",
+   "title": "印譜怎麼讀怎麼臨",
+   "en": "Reading & Copying Seal Albums",
+   "summary": "印譜就是篆刻的字帖，讀懂它、臨好它，篆刻功力就穩穩往上走。",
+   "tags": "印譜,臨摹,漢印,學習,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "shuyuan-shi-shen",
+   "chapter": "taiwan-history",
+   "sub": "qing",
+   "title": "清代書院與士紳用印",
+   "en": "Qing Academies & Gentry Seals",
+   "summary": "清代台灣沒有職業篆刻家，但書院與士紳的書畫用印，已經把印章帶進台灣生活。",
+   "tags": "台灣史,清代,書院,士紳,用印,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "caorong-danlu",
+   "chapter": "taiwan-history",
+   "sub": "japanese",
+   "title": "曹秋圃與澹廬書會",
+   "en": "Cao Qiupu & the Danlu Society",
+   "summary": "曹秋圃的澹廬書會是台灣書法篆刻社團的開端，1929 年創立至今近百年，影響深遠。",
+   "tags": "曹秋圃,澹廬書會,日治,書法,社團,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "exhibition-shodou",
+   "chapter": "taiwan-history",
+   "sub": "japanese",
+   "title": "日治時期的書道教育與展覽會",
+   "en": "Japanese-Era Calligraphy Education",
+   "summary": "日治時期的書道教育與展覽會，把書法篆刻變成台灣學校與展場裡的日常，土壤就此成形。",
+   "tags": "日治,書道,展覽會,教育,台灣史,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "wang-zhuangwei-haijiao",
+   "chapter": "taiwan-history",
+   "sub": "postwar",
+   "title": "王壯為與《海嶠印集》",
+   "en": "Wang Zhuangwei & the Haiqiao Seal Album",
+   "summary": "王壯為把篆刻正式帶進台灣學院與民間，《海嶠印集》是戰後台灣篆刻的第一份集體成績單。",
+   "tags": "王壯為,海嶠印集,戰後,台灣篆刻,師大,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "wang-beiyue-yinlin",
+   "chapter": "taiwan-history",
+   "sub": "postwar",
+   "title": "王北岳與《印林》雜誌",
+   "en": "Wang Beiyue & Yinlin Magazine",
+   "summary": "王北岳用一本《篆刻述要》和一份《印林》雜誌，把台灣篆刻的學問與市場一起帶起來。",
+   "tags": "王北岳,印林雜誌,篆刻述要,台灣篆刻,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "post-liberalization-turn",
+   "chapter": "taiwan-history",
+   "sub": "liberalization",
+   "title": "解嚴後的篆刻轉型",
+   "en": "Seal Carving After Liberalization",
+   "summary": "解嚴讓台灣篆刻從文人雅玩走向當代創作，印面上開始出現台灣自己的聲音。",
+   "tags": "解嚴,當代,台灣篆刻,創作,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "scene-today",
+   "chapter": "taiwan-history",
+   "sub": "contemporary",
+   "title": "當代台灣篆刻現場",
+   "en": "The Contemporary Taiwanese Scene",
+   "summary": "當代台灣篆刻不是博物館裡的古董，學院、社團、展覽、文創都在讓它繼續活。",
+   "tags": "當代,展覽,美展,台灣篆刻,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "taiwan-seal-society",
+   "chapter": "taiwan-societies",
+   "sub": "taiwan-seal-society",
+   "title": "台灣印社",
+   "en": "Taiwan Seal Society",
+   "summary": "台灣印社是台灣篆刻界的門面，從社員組成到國際交流，代表台灣篆刻的水平與活力。",
+   "tags": "台灣印社,社團,展覽,國際交流,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "seal-engraving-society",
+   "chapter": "taiwan-societies",
+   "sub": "associations",
+   "title": "中華民國篆刻學會",
+   "en": "R.O.C. Seal-Engraving Society",
+   "summary": "中華民國篆刻學會是台灣篆刻界的資深組織，從創辦到現在，一直撐著篆刻的制度面。",
+   "tags": "篆刻學會,社團,王壯為,黃嘗銘,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "taiwan-seal-carvers",
+   "chapter": "taiwan-societies",
+   "sub": "associations",
+   "title": "台灣篆刻家協會",
+   "en": "Taiwan Seal Carvers Association",
+   "summary": "台灣篆刻家協會聚集當代創作型篆刻家，是台灣篆刻往「創作」方向走的重要推手。",
+   "tags": "台灣篆刻家協會,黃嘗銘,當代,社團,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "county-societies",
+   "chapter": "taiwan-societies",
+   "sub": "local-groups",
+   "title": "縣市印社與地方據點",
+   "en": "Local Seal Societies Across Taiwan",
+   "summary": "想學篆刻不必跑到台北，各縣市的書會、社大與藝文中心，多的是入門的門路。",
+   "tags": "縣市印社,書會,社區大學,地方,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "meizhan-competition",
+   "chapter": "taiwan-societies",
+   "sub": "education",
+   "title": "美展與比賽：篆刻的擂台",
+   "en": "Art Exhibitions & Competitions",
+   "summary": "想被看見就投稿美展：台灣的全省美展與全國美展都有篆刻類，是篆刻家最好的擂台。",
+   "tags": "美展,比賽,全省美展,全國美展,篆刻,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "learning-path",
+   "chapter": "taiwan-societies",
+   "sub": "education",
+   "title": "在台灣學篆刻的管道",
+   "en": "Where to Learn Seal Carving in Taiwan",
+   "summary": "在台灣學篆刻可以從社大、書會或線上課起步，門檻不高，老師好找，工具好買。",
+   "tags": "學習,社大,篆刻班,台灣,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "xiling-exchange",
+   "chapter": "taiwan-societies",
+   "sub": "exchange",
+   "title": "與西泠印社的交流",
+   "en": "Exchange with Xiling Seal Society",
+   "summary": "台灣篆刻與西泠印社的交流從未斷過，社員身分與兩岸大賽，是台灣印人接軌國際的橋。",
+   "tags": "西泠印社,兩岸,交流,篆刻,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "japan-exchange",
+   "chapter": "taiwan-societies",
+   "sub": "exchange",
+   "title": "與日本篆刻界的交流",
+   "en": "Exchange with Japanese Seal Carvers",
+   "summary": "台灣與日本篆刻界淵源深、交流勤，兩地印人互相切磋，是東亞篆刻圈最穩的一條線。",
+   "tags": "日本,交流,台灣印社,書道,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "wang-zhuangwei",
+   "chapter": "taiwan-masters",
+   "sub": "cross-strait",
+   "title": "王壯為（1909-1998）",
+   "en": "Wang Zhuangwei",
+   "summary": "王壯為是台灣篆刻的開山級人物，從學院到故宮，從創作到教學，影響遍及全台。",
+   "tags": "王壯為,名家,台灣篆刻,故宮,進階",
+   "difficulty": "進階"
+  },
+  {
+   "slug": "wang-beiyue",
+   "chapter": "taiwan-masters",
+   "sub": "cross-strait",
+   "title": "王北岳（1926-2006）",
+   "en": "Wang Beiyue",
+   "summary": "王北岳用一本書、一份雜誌，把台灣篆刻的知識體系建立起來，是名副其實的印學大家。",
+   "tags": "王北岳,篆刻述要,印林雜誌,印學,進階",
+   "difficulty": "進階"
+  },
+  {
+   "slug": "zeng-shaojie-wuping",
+   "chapter": "taiwan-masters",
+   "sub": "cross-strait",
+   "title": "曾紹杰與吳平",
+   "en": "Zeng Shaojie & Wu Ping",
+   "summary": "曾紹杰與吳平是渡海名家的重要一頁，一個精於印、一個通於藝，滋養了台灣篆刻的第二代。",
+   "tags": "曾紹杰,吳平,渡海,名家,台灣篆刻,進階",
+   "difficulty": "進階"
+  },
+  {
+   "slug": "xue-pingnan",
+   "chapter": "taiwan-masters",
+   "sub": "mid-generation",
+   "title": "薛平南（1945-）",
+   "en": "Xue Pingnan",
+   "summary": "薛平南承王壯為之學，把書法與篆刻打通，是台灣篆刻中生代最重要的代表之一。",
+   "tags": "薛平南,名家,台灣印社,西泠印社,進階",
+   "difficulty": "進階"
+  },
+  {
+   "slug": "huang-changming",
+   "chapter": "taiwan-masters",
+   "sub": "mid-generation",
+   "title": "黃嘗銘（1954-）",
+   "en": "Huang Changming",
+   "summary": "黃嘗銘把古文字研究帶進篆刻，又是台灣篆刻社團的長期掌門人，學術與組織兼顧。",
+   "tags": "黃嘗銘,名家,篆刻家協會,古文字,進階",
+   "difficulty": "進階"
+  },
+  {
+   "slug": "chen-hongmian",
+   "chapter": "taiwan-masters",
+   "sub": "contemporary",
+   "title": "陳宏勉",
+   "en": "Chen Hongmian",
+   "summary": "陳宏勉是當代台灣篆刻的中堅，從樸拙到凝練，作品與教學都持續在線。",
+   "tags": "陳宏勉,當代,名家,篆刻展,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "lin-shunv",
+   "chapter": "taiwan-masters",
+   "sub": "contemporary",
+   "title": "林淑女",
+   "en": "Lin Shunv",
+   "summary": "林淑女是台灣女性篆刻家的代表，用凝練遒麗的印風，在篆刻圈走出自己的路。",
+   "tags": "林淑女,女性篆刻家,當代,名家,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "ke-shian",
+   "chapter": "taiwan-masters",
+   "sub": "contemporary",
+   "title": "柯詩安",
+   "en": "Ke Shian",
+   "summary": "柯詩安不只是篆刻家，更是篆刻老師，用一屆屆「若水集」師生展，證明篆刻教得會、傳得下。",
+   "tags": "柯詩安,若水集,教學,當代,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "maogong-ding-sanpan",
+   "chapter": "taiwan-culture",
+   "sub": "palace",
+   "title": "毛公鼎與散氏盤",
+   "en": "Mao Gong Ding & San Pan",
+   "summary": "想親眼看金石學的「金」，去一趟故宮看毛公鼎與散氏盤，勝過讀十本書。",
+   "tags": "毛公鼎,散氏盤,故宮,金文,青銅器,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "fangcun-mingqing",
+   "chapter": "taiwan-culture",
+   "sub": "palace",
+   "title": "故宮璽印展與典藏",
+   "en": "Seals in the National Palace Museum",
+   "summary": "故宮的璽印典藏是台灣最完整的一部印章史，「方寸銘情」展把這部歷史一次攤開。",
+   "tags": "故宮,璽印,篆刻展,方寸銘情,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "auction-market",
+   "chapter": "taiwan-culture",
+   "sub": "market",
+   "title": "台灣印石拍賣與市場",
+   "en": "Seal Stone Auctions in Taiwan",
+   "summary": "台灣印石市場成熟，從文房零售到拍賣專場都有，行情可看、可查、可議。",
+   "tags": "拍賣,印石,行情,收藏,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "taipei-shops",
+   "chapter": "taiwan-culture",
+   "sub": "shops",
+   "title": "台北印石店與文房",
+   "en": "Seal Stone Shops in Taipei",
+   "summary": "台北牯嶺街一帶的印石店是篆刻迷的聖地，從練習石到頂級田黃，一站逛到底。",
+   "tags": "台北,印石店,文房,牯嶺街,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "central-south-shops",
+   "chapter": "taiwan-culture",
+   "sub": "shops",
+   "title": "台中高雄的文房據點",
+   "en": "Stationery & Stone Shops in Central & South Taiwan",
+   "summary": "不住台北也沒關係，台中、高雄的書畫社與網路店家，一樣買得到印石、找得到課程。",
+   "tags": "台中,高雄,文房,篆刻,入門",
+   "difficulty": "入門"
+  },
+  {
+   "slug": "how-to-collect",
+   "chapter": "taiwan-culture",
+   "sub": "collection",
+   "title": "收藏印章的門道",
+   "en": "How to Collect Seals",
+   "summary": "收藏印章先從當代名家小品入手，再看材質與鈕雕，最後才碰高價名品。",
+   "tags": "收藏,名家,印石,鑑賞,中階",
+   "difficulty": "中階"
+  },
+  {
+   "slug": "seal-in-modern-life",
+   "chapter": "taiwan-culture",
+   "sub": "creative",
+   "title": "印章的現代應用",
+   "en": "Seals in Modern Life",
+   "summary": "篆刻不只在博物館，婚禮用印、文創印章、數位藝術，都讓這門手藝繼續活著。",
+   "tags": "文創,婚禮,跨界,當代,印章,入門",
+   "difficulty": "入門"
+  }
+ ]
+}

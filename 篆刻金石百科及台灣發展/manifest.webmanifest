@@ -1,0 +1,16 @@
+{
+  "name": "篆刻金石百科｜台灣發展",
+  "short_name": "篆刻金石",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3a2a1f",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "assets/images/home-hero.webp",
+      "sizes": "1280x720",
+      "type": "image/webp"
+    }
+  ]
+}

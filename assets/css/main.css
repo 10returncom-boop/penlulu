@@ -115,15 +115,15 @@ h1,h2,h3,h4{line-height:1.35;color:var(--ink);font-weight:700}
 .hero-visual img{max-width:100%;max-height:470px;width:auto;height:auto;border-radius:22px;box-shadow:0 20px 55px rgba(0,0,0,.38);object-fit:contain}
 /* hero 只放站名標題，其餘文字移到下一區 */
 .hero-text .hero-brand-only{font-size:54px;line-height:1.1;margin:0}
-.hero-intro{background:linear-gradient(rgba(255,255,255,.60),rgba(255,255,255,.60)),url('../../images/penlulu_stationery_card_fp-brands.webp') center/cover no-repeat;padding:52px 0 60px;border-bottom:1px solid var(--border)}
+.hero-intro{background:url('../../images/penlulu_stationery_card_fp-brands.webp') center/cover no-repeat;padding:52px 0 60px;border-bottom:1px solid var(--border)}
 .hero-gap{background:var(--card);height:28px}
 .hero-intro-head{max-width:700px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center}
 .hero-intro-head *{text-align:center}
 .hero-intro-head .hero-kicker{color:#64748b;margin-bottom:14px}
 .intro-line2{font-size:34px;margin:0 0 24px;line-height:1.2;font-weight:700;letter-spacing:2px;color:#1e3a8a}
 .hero-intro-head .hero-cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:6px}
-.hero-intro-head .hero-cta .btn,.hero-intro-head .hero-cta .btn.ghost.light{background:linear-gradient(135deg,#1d4ed8,#1f6f6b);border:none;color:#fff;box-shadow:0 4px 14px rgba(31,111,107,.35)}
-.hero-intro-head .hero-cta .btn:hover,.hero-intro-head .hero-cta .btn.ghost.light:hover{background:linear-gradient(135deg,#1e40af,#175754)}
+.hero-intro-head .hero-cta .btn{background:linear-gradient(135deg,#1d4ed8,#3b82f6);border:none;color:#fff;box-shadow:0 4px 14px rgba(29,78,216,.35)}
+.hero-intro-head .hero-cta .btn:hover{background:linear-gradient(135deg,#1e40af,#2563eb)}
 .hero-intro-head .hero-sub{margin:24px auto 0;font-size:13.5px;line-height:1.75;color:#475569;opacity:1;max-width:620px;text-align:center}
 /* hero 滿版圖：標題置中放上、縮小、可愛可商用字型 */
 .hero-content .hero-brand-only{font-size:36px;line-height:1.15;margin:0;font-family:'PenluluCute','Zen Maru Gothic','Noto Sans TC','Microsoft JhengHei',sans-serif;font-weight:700;letter-spacing:1px;text-shadow:0 2px 12px rgba(0,0,0,.35)}

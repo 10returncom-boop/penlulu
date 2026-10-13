@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seal-epigraphy.example.com/sitemap.xml
