@@ -1,0 +1,626 @@
+{
+  "src": "C:\\Users\\SUSI\\Doubao\\chats\\2026-10-13\\new-chat-1\\昀林篆刻-landing\\昀林篆刻-landing.html",
+  "url": "file:///C:/Users/SUSI/Doubao/chats/2026-10-13/new-chat-1/%E6%98%80%E6%9E%97%E7%AF%86%E5%88%BB-landing/%E6%98%80%E6%9E%97%E7%AF%86%E5%88%BB-landing.html",
+  "outdir": "C:\\Users\\SUSI\\Doubao\\chats\\2026-10-13\\new-chat-1\\昀林篆刻-landing\\_shots",
+  "include": [
+    "lint",
+    "screenshots",
+    "structure"
+  ],
+  "shots": {
+    "desktop": {
+      "slices": [
+        "C:\\Users\\SUSI\\Doubao\\chats\\2026-10-13\\new-chat-1\\昀林篆刻-landing\\_shots\\昀林篆刻-landing_desktop_p1of2.jpg",
+        "C:\\Users\\SUSI\\Doubao\\chats\\2026-10-13\\new-chat-1\\昀林篆刻-landing\\_shots\\昀林篆刻-landing_desktop_p2of2.jpg"
+      ],
+      "sliceHint": "按顺序 Read slices 里的各分片。",
+      "truncated": false,
+      "structure": {
+        "title": "昀林篆刻金石 · 林政毅書法篆刻個展",
+        "firstH1": "昀林篆刻",
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "fullpage": {
+          "w": 1440,
+          "h": 7319
+        },
+        "counts": {
+          "section": 4,
+          "h1": 1,
+          "h2": 1,
+          "img": 50,
+          "canvas": 0,
+          "svg": 0,
+          "links": 4,
+          "buttons": 0
+        }
+      },
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "horizontalOverflow": [],
+      "resourceErrors": [],
+      "duplicateImagesWarning": [
+        {
+          "count": 2,
+          "contentImageTotal": 49,
+          "sameRenderedSize": false,
+          "distinctAlts": 2,
+          "sizes": [
+            "502x923",
+            "233x233"
+          ],
+          "alts": [
+            "昀林篆刻作品 四德俱全逢九秩",
+            "昀林篆刻作品 10"
+          ],
+          "src": "…s/2026-10-13/new-chat-1/%E6%98%80%E6%9E%97%E7%AF%86%E5%88%BB-landing/assets/262197_0.jpg"
+        }
+      ],
+      "duplicateImagesHint": "info · 同一图片资源在多处使用；count 是次数，contentImageTotal 是内容图总数。尺寸和 alt 差异仅供参考，不代表使用错误；总览、局部探索和详情可以复用同图。本项不要求换图、减少展示数量或修改布局。",
+      "timelineAlignmentIssues": [
+        {
+          "orientation": "vertical",
+          "axis": "div.tl-line",
+          "dot": "div.tl-dot",
+          "offsetPx": 1,
+          "affectedDots": 3,
+          "dotOuterSize": 14,
+          "dotBoxSizing": "border-box",
+          "dotBorderWidth": 3,
+          "reason": "arithmetic"
+        }
+      ],
+      "timelineAlignmentHint": "含义：时间轴的轴线中心与节点圆点中心不重合。orientation=vertical 比的是中心 x、horizontal 比的是中心 y；offsetPx 是圆点相对轴线的偏移（正=偏右/偏下），affectedDots 是呈现同一偏移的节点数。**1px 起就可能被看出来，2px 必然可辨**，这是时间轴最高频的 badcase，实测同批产物里做对的偏移为 0.00px、做错的在 2px 以上（也见过 15px / 20px 的）。本规则只在「至少 2 个节点呈现同一偏移」时才报——孤立离群值不报，所以触发了基本就是真的。 | reason=pseudo-content-box：圆点用 ::before 画且带 border。**`*{box-sizing:border-box}` 不匹配伪元素**，伪元素仍是 content-box，实际外径 = width + 2*border，比按 border-box 心算的大一圈，偏移量恒等于 dotBorderWidth。修法二选一：(a) 在该 ::before 规则里**显式补 `box-sizing:border-box`**；(b) 改用真元素（<span>/<div>）画圆点，它才吃得到 `*` 的重置。 | reason=origin-mismatch：轴线挂在 axisOrigin 的 ::before 上、圆点挂在 dotOrigin 里，两者是不同的定位包含块，坐标原点差一个 axisOriginPadding，偏移量恒等于它。修法：把轴线和圆点锚到**同一个定位祖先**上，别一个挂外层容器、一个挂内层 item。 | reason=arithmetic：手算 left/top 时算错了（常见于双侧交替时间轴——中央竖线 left:50%，奇偶两列各写一套 left，其中一列没对上，两列偏移量还不一样）。 | 最稳的写法（推荐直接改成这个，而不是去修算式）：item 用 grid 三列（时间 / 轴 / 内容），圆点是真元素放中列、用 `justify-self:center` 让布局引擎负责居中，轴线的 left 用 `calc()` 从同一组列宽变量推出，例如 `.timeline{--date:88px;--axis:30px;--gap:20px}` + `.timeline::before{left:calc(var(--date) + var(--gap) + var(--axis)/2)}`。这样圆点一个 left 都不用手算，两者引用同一个真值来源，结构上不可能歪。横向时间轴同理，把三列换成三行、用 `align-self:center`。 | 顺带核对（本规则不查，但同属时间轴高频问题）：文字与轴线/图标是否重叠；每个节点是否承载了时间 + 事件名 + 一句话说明，而不是只丢一个标签。 | 豁免：(1) 故意做的错位 / 手绘风设计，且截图上成立；(2) 圆点本身带外发光或多层 box-shadow、视觉中心与盒模型中心本就不重合。",
+      "reportSource": "cdp"
+    }
+  },
+  "engine": "chrome_cli",
+  "chromiumExec": "C:\\Users\\SUSI/AppData/Local/ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe",
+  "engineDegraded": true,
+  "engineDegradedReason": "playwright 未装",
+  "publishBrokenAssets": [
+    {
+      "file": "assets\\262188_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262189_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262190_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262191_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262192_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262193_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262194_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262195_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262196_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262198_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262199_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262200_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262201_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262202_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262203_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262204_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262205_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262206_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262207_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    },
+    {
+      "file": "assets\\262208_0.jpg",
+      "reason": "unreferenced-file",
+      "severity": "warning",
+      "loadedAtRuntime": false,
+      "onDisk": true
+    }
+  ],
+  "publishBrokenAssetsHint": "含义：发布链路靠静态扫描 HTML 源码决定上传哪些图片文件，**只认 `src` 属性和 CSS `url()` 两个位置**（线上实测）。写在别处的路径不会被上传，发布后 404 裂图。本地打开和自检截图都看不出来——文件真实存在，浏览器照样加载。 | severity=error 的逐条改，改法都是同一个：把路径挪到 `<img src=\"assets/x.png\">` 或 CSS `url('assets/x.png')`。reason=js-literal 路径写在 JS 字符串里（`const g=['assets/x.png']` 这种常量数组也算，照样裂）；reason=js-concat 路径由 JS 拼接（`'assets/img'+i+'.png'`）；reason=non-src-attr 路径写在 `data-src`、`srcset`、`poster` 等非 `src` 属性上——**这类即便静态写在 HTML 属性里也会裂**，懒加载写法要在 `src` 上放真实路径。 | severity=warning（reason=unreferenced-file）是提醒不是错误：`assets/` 里有这个文件，但源码和运行时都没引用到它。可能是没用上的多余素材（删掉即可），也可能是路径拼接且当前视口没渲染到的图（那就是会裂的，按 error 处理）。**这一条只在本地电脑（macOS / Windows）检测**——云电脑图片走 `lark-cli drive +html-image-upload`，HTML 引用外链、`assets/` 里的原图本就该保留且不被引用，在那儿报是纯误报，所以直接不报；**别因为这条去删云电脑上的原图**。自行判断，别的规则不受它影响。",
+  "elapsedSec": 7.58,
+  "schemaVersion": 2,
+  "status": "fail",
+  "engineInfo": {
+    "name": "chrome_cli",
+    "degraded": true,
+    "degradedReasons": [
+      "playwright 未装"
+    ]
+  },
+  "input": {
+    "original": "C:\\Users\\SUSI\\Doubao\\chats\\2026-10-13\\new-chat-1\\昀林篆刻-landing\\昀林篆刻-landing.html",
+    "resolvedPath": "C:\\Users\\SUSI\\Doubao\\chats\\2026-10-13\\new-chat-1\\昀林篆刻-landing\\昀林篆刻-landing.html",
+    "baseUrl": "file:///C:/Users/SUSI/Doubao/chats/2026-10-13/new-chat-1/%E6%98%80%E6%9E%97%E7%AF%86%E5%88%BB-landing/%E6%98%80%E6%9E%97%E7%AF%86%E5%88%BB-landing.html",
+    "protocol": "file",
+    "cwd": "C:\\Users\\SUSI\\Doubao\\chats\\2026-10-13\\new-chat-1",
+    "mediaMode": {
+      "reducedMotion": true
+    }
+  },
+  "artifacts": {
+    "screenshots": [
+      {
+        "viewport": "desktop",
+        "tiles": [
+          "C:\\Users\\SUSI\\Doubao\\chats\\2026-10-13\\new-chat-1\\昀林篆刻-landing\\_shots\\昀林篆刻-landing_desktop_p1of2.jpg",
+          "C:\\Users\\SUSI\\Doubao\\chats\\2026-10-13\\new-chat-1\\昀林篆刻-landing\\_shots\\昀林篆刻-landing_desktop_p2of2.jpg"
+        ],
+        "visualCoverage": {
+          "complete": true,
+          "reason": null
+        }
+      }
+    ]
+  },
+  "summary": {
+    "blocker": 0,
+    "error": 21,
+    "warning": 0,
+    "info": 1
+  },
+  "findings": [
+    {
+      "ruleId": "timelineAlignmentIssues",
+      "severity": "error",
+      "kind": "layout",
+      "viewport": "desktop",
+      "selector": null,
+      "evidence": {
+        "orientation": "vertical",
+        "axis": "div.tl-line",
+        "dot": "div.tl-dot",
+        "offsetPx": 1,
+        "affectedDots": 3,
+        "dotOuterSize": 14,
+        "dotBoxSizing": "border-box",
+        "dotBorderWidth": 3,
+        "reason": "arithmetic"
+      },
+      "dedupeKey": "timelineAlignmentIssues|desktop||0"
+    },
+    {
+      "ruleId": "duplicateImagesWarning",
+      "severity": "info",
+      "kind": "content",
+      "viewport": "desktop",
+      "selector": null,
+      "evidence": {
+        "count": 2,
+        "contentImageTotal": 49,
+        "sameRenderedSize": false,
+        "distinctAlts": 2,
+        "sizes": [
+          "502x923",
+          "233x233"
+        ],
+        "alts": [
+          "昀林篆刻作品 四德俱全逢九秩",
+          "昀林篆刻作品 10"
+        ],
+        "src": "…s/2026-10-13/new-chat-1/%E6%98%80%E6%9E%97%E7%AF%86%E5%88%BB-landing/assets/262197_0.jpg"
+      },
+      "dedupeKey": "duplicateImagesWarning|desktop||0"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262188_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||0"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262189_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||1"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262190_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||2"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262191_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||3"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262192_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||4"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262193_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||5"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262194_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||6"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262195_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||7"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262196_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||8"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262198_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||9"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262199_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||10"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262200_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||11"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262201_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||12"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262202_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||13"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262203_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||14"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262204_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||15"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262205_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||16"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262206_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||17"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262207_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||18"
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "kind": "publish",
+      "viewport": null,
+      "selector": null,
+      "evidence": {
+        "file": "assets\\262208_0.jpg",
+        "reason": "unreferenced-file",
+        "severity": "warning",
+        "loadedAtRuntime": false,
+        "onDisk": true
+      },
+      "dedupeKey": "publishBrokenAssets|top||19"
+    }
+  ],
+  "prioritizedActions": [
+    {
+      "ruleId": "timelineAlignmentIssues",
+      "severity": "error",
+      "viewport": "desktop",
+      "selector": null
+    },
+    {
+      "ruleId": "publishBrokenAssets",
+      "severity": "error",
+      "viewport": null,
+      "selector": null
+    }
+  ],
+  "reportPath": "C:\\Users\\SUSI\\Doubao\\chats\\2026-10-13\\new-chat-1\\昀林篆刻-landing\\_shots\\report.json"
+}
